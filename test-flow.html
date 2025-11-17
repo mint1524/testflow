@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Automation Test Flow</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #111827;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+    main {
+      background: #020617;
+      border-radius: 18px;
+      padding: 24px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+    .step {
+      display: none;
+    }
+    .step.active {
+      display: block;
+    }
+    .step-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    input, select, button, .typeableLabelTextPositioner_afhkj_87 {
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+
+    /* Твои теги / классы */
+
+    input#email.block.w-full.border-0.p-0.shadow-none.outline-hidden.focus-within\:shadow {
+      width: 100%;
+      border-radius: 8px;
+      padding: 10px 12px;
+      border: 1px solid #4b5563;
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    .btn.relative.btn-primary.w-full.p-3,
+    .btn.relative.btn-primary.btn-large,
+    .root_wetqs_60_primary_wetqs_99 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      color: white;
+      padding: 12px 16px;
+      margin-top: 8px;
+    }
+
+    .btn.relative.btn-primary.btn-large {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+
+    .transparentButton_1jica_12_root_wetqs_60_transparent_wetqs_116 {
+      background: transparent;
+      border: none;
+      color: #9ca3af;
+      cursor: pointer;
+      font-size: 13px;
+      margin-top: 4px;
+      text-decoration: underline;
+    }
+
+    .typeableLabelTextPositioner_afhkj_87 {
+      border-radius: 8px;
+      border: 1px solid #4b5563;
+      min-height: 40px;
+      padding: 8px 10px;
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    /* финальная форма */
+    .CheckoutInput.Input,
+    .CheckoutInput.CheckoutInput--tabularnums.Input {
+      width: 100%;
+      border-radius: 8px;
+      padding: 10px 12px;
+      border: 1px solid #4b5563;
+      background: #020617;
+      color: #e5e7eb;
+      box-sizing: border-box;
+    }
+
+    .Select-source,
+    .Select-source.Select-source--empty {
+      width: 100%;
+      border-radius: 8px;
+      padding: 10px 12px;
+      border: 1px solid #4b5563;
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    .Checkbox-Input {
+      margin-right: 8px;
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+    }
+    .row > * {
+      flex: 1;
+    }
+    small {
+      font-size: 11px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Test flow for automation</h1>
+    <p>Здесь собраны все шаги в одном файле, переключение шагов имитирует реальный сценарий.</p>
+
+    <!-- STEP 1 -->
+    <section class="step active" data-step="1">
+      <div class="step-label">Step 1 — email + "Try it for $1"</div>
+
+      <input id="email" class="block w-full border-0 p-0 shadow-none outline-hidden focus-within:shadow" placeholder="Email" />
+      <button class="btn relative btn-primary w-full p-3">Try it for $1</button>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="step" data-step="2">
+      <div class="step-label">Step 2 — password</div>
+
+      <small>Эта зона имитирует поле ввода пароля.</small>
+      <div class="typeableLabelTextPositioner_afhkj_87" contenteditable="true"></div>
+      <button class="root_wetqs_60_primary_wetqs_99">Continue</button>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="step" data-step="3">
+      <div class="step-label">Step 3 — email code</div>
+
+      <small>Здесь можно ввести код из письма.</small>
+      <div class="typeableLabelTextPositioner_afhkj_87" contenteditable="true"></div>
+      <button class="root_wetqs_60_primary_wetqs_99">Continue</button>
+      <button class="transparentButton_1jica_12_root_wetqs_60_transparent_wetqs_116">Resend email</button>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="step" data-step="4">
+      <div class="step-label">Step 4 — name / DOB (пример)</div>
+
+      <small>Два "typeable" поля — можно использовать под имя и дату рождения.</small>
+      <div class="typeableLabelTextPositioner_afhkj_87" contenteditable="true"></div>
+      <div class="typeableLabelTextPositioner_afhkj_87" contenteditable="true"></div>
+      <button class="root_wetqs_60_primary_wetqs_99">Continue</button>
+    </section>
+
+    <!-- STEP 5 -->
+    <section class="step" data-step="5">
+      <div class="step-label">Step 5 — intermediate Continue</div>
+
+      <button class="btn relative btn-primary btn-large">Continue</button>
+    </section>
+
+    <!-- STEP 6 (checkout) -->
+    <section class="step" data-step="6">
+      <div class="step-label">Step 6 — payment form</div>
+
+      <input id="email" class="CheckoutInput Input Input--empty" placeholder="Email" />
+      <div class="row">
+        <input id="cardNumber" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="Card number" />
+      </div>
+      <div class="row">
+        <input id="cardExpiry" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="MM/YY" />
+        <input id="cardCvc" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="CVC" />
+      </div>
+      <input id="billingName" class="CheckoutInput Input Input--empty" placeholder="Name on card" />
+      <select id="billingCountry" class="Select-source">
+        <option value="">Country</option>
+        <option value="Germany">Germany</option>
+        <option value="United States">United States</option>
+        <option value="United Kingdom">United Kingdom</option>
+      </select>
+      <input id="billingAddressLine1" class="CheckoutInput Input Input--empty" placeholder="Address line 1" />
+      <input id="billingAddressLine2" class="CheckoutInput Input Input--empty" placeholder="Address line 2" />
+      <input id="billingLocality" class="CheckoutInput Input Input--empty" placeholder="City" />
+      <input id="billingPostalCode" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="Postal code" />
+      <select id="billingAdministrativeArea" class="Select-source Select-source--empty">
+        <option value="">Region</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Bavaria">Bavaria</option>
+      </select>
+      <label style="display:flex;align-items:center;margin-top:8px;">
+        <input id="termsOfServiceConsentCheckbox" class="Checkbox-Input" type="checkbox" />
+        <span>I agree to the Terms of Service</span>
+      </label>
+    </section>
+  </main>
+
+  <script>
+    const steps = Array.from(document.querySelectorAll('.step'));
+    let currentStepIndex = 0;
+
+    function showStep(index) {
+      steps.forEach((step, i) => {
+        step.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextStep() {
+      if (currentStepIndex < steps.length - 1) {
+        currentStepIndex += 1;
+        showStep(currentStepIndex);
+      }
+    }
+
+    // Общий хендлер кликов, совпадающий с твоими селекторами
+    document.addEventListener('click', (e) => {
+      if (
+        e.target.matches('button.btn.relative.btn-primary.w-full.p-3') ||
+        e.target.matches('button.root_wetqs_60_primary_wetqs_99') ||
+        e.target.matches('button.btn.relative.btn-primary.btn-large')
+      ) {
+        nextStep();
+      }
+
+      if (e.target.matches('button.transparentButton_1jica_12_root_wetqs_60_transparent_wetqs_116')) {
+        alert('Resend email clicked (тестовое поведение)');
+      }
+    });
+
+    showStep(currentStepIndex);
+  </script>
+</body>
+</html>
