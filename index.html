@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Step 1 — Email</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Step 1 — Email</h1>
+    <p>Введите email и нажмите кнопку.</p>
+
+    <input id="email" class="block w-full border-0 p-0 shadow-none outline-hidden focus-within:shadow" placeholder="Email" />
+    <button class="btn relative btn-primary w-full p-3">Try it for $1</button>
+  </main>
+
+  <script>
+    document.querySelector('button.btn.relative.btn-primary.w-full.p-3')
+      .addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'password.html';
+      });
+  </script>
+</body>
+</html>

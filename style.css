@@ -1,0 +1,118 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #111827;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+main {
+  background: #020617;
+  border-radius: 18px;
+  padding: 24px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+h1 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+input, select, button, .typeableLabelTextPositioner_afhkj_87 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/* твои классы/теги */
+
+input#email.block.w-full.border-0.p-0.shadow-none.outline-hidden.focus-within\:shadow {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.btn.relative.btn-primary.w-full.p-3,
+.btn.relative.btn-primary.btn-large,
+.root_wetqs_60_primary_wetqs_99 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 12px 16px;
+  margin-top: 8px;
+}
+
+.btn.relative.btn-primary.btn-large {
+  padding: 14px 18px;
+  font-size: 15px;
+}
+
+.transparentButton_1jica_12_root_wetqs_60_transparent_wetqs_116 {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 4px;
+  text-decoration: underline;
+}
+
+.typeableLabelTextPositioner_afhkj_87 {
+  border-radius: 8px;
+  border: 1px solid #4b5563;
+  min-height: 40px;
+  padding: 8px 10px;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.CheckoutInput.Input,
+.CheckoutInput.CheckoutInput--tabularnums.Input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+  box-sizing: border-box;
+}
+
+.Select-source,
+.Select-source.Select-source--empty {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.Checkbox-Input {
+  margin-right: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+.row > * {
+  flex: 1;
+}

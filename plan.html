@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Step 5 — Plan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Step 5 — Confirm plan</h1>
+    <p>Просто кнопка Continue.</p>
+
+    <button class="btn relative btn-primary btn-large">Continue</button>
+  </main>
+
+  <script>
+    document.querySelector('.btn.relative.btn-primary.btn-large')
+      .addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'checkout.html';
+      });
+  </script>
+</body>
+</html>

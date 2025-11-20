@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Step 6 — Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Step 6 — Payment form</h1>
+
+    <input id="email" class="CheckoutInput Input Input--empty" placeholder="Email" />
+    <div class="row">
+      <input id="cardNumber" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="Card number" />
+    </div>
+    <div class="row">
+      <input id="cardExpiry" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="MM/YY" />
+      <input id="cardCvc" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="CVC" />
+    </div>
+    <input id="billingName" class="CheckoutInput Input Input--empty" placeholder="Name on card" />
+    <select id="billingCountry" class="Select-source">
+      <option value="">Country</option>
+      <option value="Germany">Germany</option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+    </select>
+    <input id="billingAddressLine1" class="CheckoutInput Input Input--empty" placeholder="Address line 1" />
+    <input id="billingAddressLine2" class="CheckoutInput Input Input--empty" placeholder="Address line 2" />
+    <input id="billingLocality" class="CheckoutInput Input Input--empty" placeholder="City" />
+    <input id="billingPostalCode" class="CheckoutInput CheckoutInput--tabularnums Input Input--empty" placeholder="Postal code" />
+    <select id="billingAdministrativeArea" class="Select-source Select-source--empty">
+      <option value="">Region</option>
+      <option value="Berlin">Berlin</option>
+      <option value="Bavaria">Bavaria</option>
+    </select>
+    <label style="display:flex;align-items:center;margin-top:8px;">
+      <input id="termsOfServiceConsentCheckbox" class="Checkbox-Input" type="checkbox" />
+      <span>I agree to the Terms of Service</span>
+    </label>
+  </main>
+</body>
+</html>

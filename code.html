@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Step 3 — Email code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Step 3 — Email code</h1>
+    <p>Поле кода + кнопка Resend (как в твоих тегах).</p>
+
+    <div class="typeableLabelTextPositioner_afhkj_87" contenteditable="true"></div>
+    <button class="root_wetqs_60_primary_wetqs_99">Continue</button>
+    <button class="transparentButton_1jica_12_root_wetqs_60_transparent_wetqs_116">Resend email</button>
+  </main>
+
+  <script>
+    document.querySelector('.root_wetqs_60_primary_wetqs_99')
+      .addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = 'profile.html';
+      });
+
+    document.querySelector('.transparentButton_1jica_12_root_wetqs_60_transparent_wetqs_116')
+      .addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Resend email clicked (stub)');
+      });
+  </script>
+</body>
+</html>
